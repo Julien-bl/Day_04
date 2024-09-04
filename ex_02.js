@@ -3,7 +3,7 @@ function findHousing(housingToFind, housingList) {
     housingToFind = housingToFind.toLowerCase();  
     while (index < housingList.length) {
         if (housingList[index].toLowerCase() === housingToFind) {
-            return [index, housingList[index]];
+            return [index+1, housingList[index]];
             }
         index++;
     }
